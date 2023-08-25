@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainactivity"
+
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainactivity1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/city_name"
+                android:text="Nizampet"
+
+                android:layout_marginLeft="20.0dp"
+
+                android:textSize="30dp" />
+            <View android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                style="?attr/materialIconButtonStyle"
+
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:closeIcon="@android:drawable/ic_menu_more"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/search"
+
+                />
+
+
+
+
+            <Button
+                android:id="@+id/setting"
+                style="?attr/materialIconButtonStyle"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+       android:drawableLeft="@android:drawable/ic_menu_more" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/weatherimage"
+            android:layout_marginTop="30.0dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_type"
+            android:text="Mist"
+            android:layout_gravity="center"
+            android:textSize="30.0dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp"
+            android:text="27"
+
+            android:layout_gravity="center"
+            android:textSize="40dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feels"
+            android:text="Feels like 29"
+            android:layout_gravity="center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Weather details"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:text="Windspeed" />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="30dp"
+                        android:maxHeight="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:src="@drawable/wind"
+
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/windspeed"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="15km/h"
+                        android:textSize="20dp"/>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="150dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:text="Humidity   " />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="30dp"
+                        android:maxHeight="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:src="@drawable/hum"
+
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/humudity"
+                        android:text="69%"
+                        android:textSize="20dp"/>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:text="Sunrise     " />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="30dp"
+                        android:maxHeight="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:src="@drawable/sunset"
+
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/sunrise"
+                        android:text="6:30"
+                        android:textSize="20dp"/>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="150dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:text="Sunset        " />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="30dp"
+                        android:maxHeight="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:src="@drawable/sunrise"
+
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="6:30"
+                        android:id="@+id/sunset"
+                        android:textSize="20dp"/>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hourly Forecast"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/containerLayout"
+                    android:orientation="horizontal">
+
+
+                    <!-- TextView elements will be added here dynamically -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/getting"
+        android:layout_gravity="center"
+
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+
+        />
+
+
+
+
+</LinearLayout>
